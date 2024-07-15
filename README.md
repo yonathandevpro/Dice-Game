@@ -23,12 +23,12 @@ This is a simple two-player dice game created using HTML, CSS, and JavaScript. T
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yonathandevpro/GUESS-MY-NUMBER.git
+    git clone https://github.com/yonathandevpro/Dice-Game.git
     ```
 
 2. Navigate to the project directory:
     ```sh
-    cd GUESS-MY-NUMBER
+    cd Dice-Game
     ```
 
 3. Open `index.html` in your web browser to start the game.
@@ -46,7 +46,7 @@ This is a simple two-player dice game created using HTML, CSS, and JavaScript. T
 ## Project Structure
 
 ```sh
-GUESS-MY-NUMBER/
+DICE-GAME/
 ├── index.html
 ├── style.css
 └── script.js
@@ -84,4 +84,11 @@ Contributions are welcome! Please fork this repository and submit a pull request
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. 
+
+## Collaborations
+
+Email me if you want to work together at:
+```sh
+yonathanber@icloud.com
+```
