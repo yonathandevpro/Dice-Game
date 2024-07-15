@@ -39,18 +39,28 @@ btnRoll.addEventListener('click', function () {
       currentScore;
   } else {
     // switch to next player
-    currentScore = 0;
-    document.getElementById(`current--${activePlayer}`).textContent =
-      currentScore;
-    activePlayer = activePlayer === 0 ? 1 : 0;
-    player0El.classList.toggle('player--active');
-    player1El.classList.toggle('player--active');
-    // document
-    //   .querySelector(`.player--${activePlayer}`)
-    //   .classList.add('player--active');
 
-    // document
-    //   .querySelector(`.player--${activePlayer === 0 ? 1 : 0}`)
-    //   .classList.remove('player--active');
+    switchNextPlayer();
   }
 });
+
+btnHold.addEventListener('click', function () {
+  scores[activePlayer] += currentScore;
+  document.getElementById(`score--${activePlayer}`).textContent =
+    scores[activePlayer];
+
+  if (scores[activePlayer] > 100) {
+    console.log(' WINNER');
+  } else {
+    switchNextPlayer();
+  }
+});
+
+function switchNextPlayer() {
+  currentScore = 0;
+  document.getElementById(`current--${activePlayer}`).textContent =
+    currentScore;
+  activePlayer = activePlayer === 0 ? 1 : 0;
+  player0El.classList.toggle('player--active');
+  player1El.classList.toggle('player--active');
+}
