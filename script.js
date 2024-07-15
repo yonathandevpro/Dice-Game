@@ -64,3 +64,13 @@ function switchNextPlayer() {
   player0El.classList.toggle('player--active');
   player1El.classList.toggle('player--active');
 }
+
+btnNew.addEventListener('click', function () {
+  activePlayer = 0;
+  currentScore = 0;
+  (scores[0] = 0), (scores[1] = 0);
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current0El.textContent = 0;
+  current1El.textContent = 0;
+});
